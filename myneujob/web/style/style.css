@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
     --font-color: #353535;
     --primary-color: #FFDE59;
@@ -11,16 +13,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* overflow-x: hidden; */
 }
 
 /* ========== NAV BAR ========== */
 
-header {    
+header {
+    position: sticky;
     background-color: var(--bg-color);
     height: 7em;
+    top: 0;
+    z-index: 50;
 }
 
 header nav {
+    position: sticky;
     background-color: var(--primary-color);
     display: flex;
     height: 6em;
@@ -70,4 +77,77 @@ header nav {
 
 .nav li a:hover {
     color: var(--font-color);
+}
+
+/* ========== BODY ========== */
+
+/* ========== MAIN ========== */
+
+.main_content {
+    position: relative;
+}
+
+.big_img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.big_img img {
+    width: 33.333%;
+    height: 25rem;
+    object-fit: cover;
+    opacity: 50%;
+    z-index: -5;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    bottom: 20px;
+    font-size: 3rem;
+    opacity: 80%;
+}
+
+.titles h1 {
+    text-transform: uppercase;
+}
+
+.main_content button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5em;
+}
+
+/* ========== BTNS ========== */
+
+.main_btn {
+    height: 15em;
+    width: 15em;
+    padding: 0 1em;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    transition: all 250ms ease-in-out;
+}
+
+.main_btn a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.main_btn:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+    cursor: pointer;
 }
