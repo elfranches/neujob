@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Neu Job</title>
         <link rel="stylesheet" type="text/css" href="style/style.css" media="screen" />
+        <script src="https://kit.fontawesome.com/ccf1b890cc.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!-- ========== NAV BAR ========== -->
@@ -41,7 +42,71 @@
         </div>
 
         <div class="check_boxes__content">
-            <!-- TO BE DONE -->
+            <form action="index.html" method="GET">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" id="place" placeholder="Where?">
+                <button type="submit" class="smbt">Continue</button>
+            </form>
+            <div class="checkboxes">
+                <div class="checkbox">
+                    <!-- CLEANING -->
+                    <input type="checkbox" name="cb1" id="cb1" class="toggle d_none">
+                    <label for="cb1" class="toggle-label">
+                        <i class="fas fa-soap"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <!-- MECHANIC -->
+                    <input type="checkbox" name="cb2" id="cb2" class="toggle d_none">
+                    <label for="cb2" class="toggle-label">
+                        <i class="fas fa-tools"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <!-- GARDENING -->
+                    <input type="checkbox" name="cb3" id="cb3" class="toggle d_none">
+                    <label for="cb3" class="toggle-label">
+                        <i class="fas fa-leaf"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <!-- HOUSEHOLD -->
+                    <input type="checkbox" name="cb4" id="cb4" class="toggle d_none">
+                    <label for="cb4" class="toggle-label">
+                        <i class="fas fa-house-user"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <!-- ELDERLY CARE -->
+                    <input type="checkbox" name="cb5" id="cb5" class="toggle d_none">
+                    <label for="cb5" class="toggle-label">
+                        <i class="fab fa-hire-a-helper"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <!-- BABYSIT -->
+                    <input type="checkbox" name="cb6" id="cb6" class="toggle d_none">
+                    <label for="cb6" class="toggle-label">
+                        <i class="fas fa-baby"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <!-- PET CARE -->
+                    <input type="checkbox" name="cb7" id="cb7" class="toggle d_none">
+                    <label for="cb7" class="toggle-label">
+                        <i class="fas fa-paw"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <!-- EDUCATION -->
+                    <input type="checkbox" name="cb8" id="cb8" class="toggle d_none">
+                    <label for="cb8" class="toggle-label">
+                        <i class="fas fa-marker"></i>
+                    </label>
+                </div>
+            </div>
         </div>
+
+        <img src="imgs/graph.png" alt="graph" class="graph">
     </body>
 </html>
