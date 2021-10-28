@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --font-color: #353535;
+    --primary-color: #FFDE59;
+    --secondary-color: #74C9D6;
+    --bg-color: #FFFFFF;
+}
+* {
+    font-family: Roboto, 'sans-serif';
+    color: var(--font-color);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+/* ========== NAV BAR ========== */
+
+header {
+    position: sticky;
+    background-color: var(--bg-color);
+    height: 7em;
+    top: 0;
+    z-index: 50;
+}
+
+header nav {
+    position: sticky;
+    background-color: var(--primary-color);
+    display: flex;
+    height: 6em;
+    padding: 0 5em;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9em;
+    width: 9em;
+    border-radius: 50%;
+    border: 1em solid var(--bg-color);
+    top: 2em;
+}
+
+.nav__options {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    width: 50%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.nav li a {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--bg-color);
+    transition: all 250ms ease-in-out;
+}
+
+.nav li a:hover {
+    color: var(--font-color);
+}
+
+h1 {
+    text-align: center;
+}
+
+.register {
+    display: flex;
+    width: max-content;
+    height: max-content;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    justify-content: center;
+    padding: 2em;
+    margin: 5em auto 5em auto;
+    top: 10vh;
+    border-radius: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    
+}
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.regdata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
