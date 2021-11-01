@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Neu Job</title>
+        <link rel="stylesheet" type="text/css" href="style/style.css" media="screen" />
+        <script src="https://kit.fontawesome.com/ccf1b890cc.js" crossorigin="anonymous"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    
+    <body>
+        <!-- ========== NAV BAR ========== -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Job 24 you</h1>
+                </div>
+                <div class="nav__options">
+                    <ul class="nav">
+                        <li><a href="#">Sprache</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Registrieren</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ========== BODY ========== -->
+        <div class="main_content">
+            <div class="big_img">
+                <img src="imgs/hp_img_1.png" alt="img1">
+                <img src="imgs/hp_img_2.png" alt="img2">
+                <img src="imgs/hp_img_3.png" alt="img3">
+                <img src="imgs/hp_img_4.png" alt="img4">
+                <img src="imgs/hp_img_5.png" alt="img5">
+                <img src="imgs/hp_img_6.png" alt="img6">
+            </div>
+            <section class="titles">
+                <h1>Was brauchen Sie?</h1>
+                <h4>Angebot von Dienstleistungen für Haus und Familie</h4>
+            </section>
+            <button class="main_btn" onclick="location.href='#'"><a href="#">Ich bin Kunde</a></button>
+        </div>
+
+        <div class="check_boxes__content">
+            <form action="index.html" method="GET">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" id="place" placeholder="Wo?">
+                <button type="submit" class="smbt">Weiter</button>
+            </form>
+            <div class="checkboxes">
+                <div class="checkbox">
+                    <!-- MECHANIC -->
+                    <input type="checkbox" name="cb2" id="cb2" class="toggle d_none">
+                    <label for="cb2" class="toggle-label">
+                        <i class="fas fa-tools"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <!-- GARDENING -->
+                    <input type="checkbox" name="cb3" id="cb3" class="toggle d_none">
+                    <label for="cb3" class="toggle-label">
+                        <i class="fas fa-leaf"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <!-- HOUSEHOLD -->
+                    <input type="checkbox" name="cb4" id="cb4" class="toggle d_none">
+                    <label for="cb4" class="toggle-label">
+                        <i class="fas fa-house-user"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <!-- BABYSIT -->
+                    <input type="checkbox" name="cb6" id="cb6" class="toggle d_none">
+                    <label for="cb6" class="toggle-label">
+                        <i class="fas fa-baby"></i>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <!-- PET CARE -->
+                    <input type="checkbox" name="cb7" id="cb7" class="toggle d_none">
+                    <label for="cb7" class="toggle-label">
+                        <i class="fas fa-paw"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <img src="imgs/graph.png" alt="graph" class="graph">
+    </body>
+</html>
