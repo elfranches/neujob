@@ -28,7 +28,7 @@
                                 <img src="imgs/german_flag.png" alt="">
                             </label>
                             <label class="option">
-                                <input type="radio" name="options" id="english">
+                                <input type="radio" name="options" id="english" checked>
                                 <img src="imgs/uea_flag.png" alt="">
                             </label>
                             <label class="option">
@@ -56,50 +56,56 @@
                 <h1>what do you need?</h1>
                 <h4>Service offers for Home and Family</h4>
             </section>
-            <button class="main_btn" onclick="location.href='#'"><a href="#">I offer Help</a></button>
-        </div>
-
-        <div class="check_boxes__content">
             <form action="index.html" method="GET">
                 <i class="fas fa-map-marker-alt"></i>
                 <input type="text" id="place" placeholder="Where?">
-                <button type="submit" class="smbt">Continue</button>
             </form>
+            <button class="main_btn"><a href="#">I offer Help</a></button>
+        </div>
+
+        <div class="check_boxes__content">
             <div class="checkboxes">
                 <div class="checkbox">
-                    <!-- MECHANIC -->
-                    <input type="checkbox" name="cb2" id="cb2" class="toggle d_none">
-                    <label for="cb2" class="toggle-label">
-                        <i class="fas fa-tools"></i>
-                    </label>
+                    <button class="toggle">
+                        <a href="#">
+                            <i class="fas fa-tools"></i>
+                        </a>
+                    </button>
                 </div>
                 <div class="checkbox">
-                    <!-- GARDENING -->
-                    <input type="checkbox" name="cb3" id="cb3" class="toggle d_none">
-                    <label for="cb3" class="toggle-label">
-                        <i class="fas fa-leaf"></i>
-                    </label>
+                    <button class="toggle">
+                        <a href="#">
+                            <i class="fas fa-paw"></i>
+                        </a>
+                    </button>
                 </div>
                 <div class="checkbox">
-                    <!-- HOUSEHOLD -->
-                    <input type="checkbox" name="cb4" id="cb4" class="toggle d_none">
-                    <label for="cb4" class="toggle-label">
-                        <i class="fas fa-house-user"></i>
-                    </label>
+                    <button class="toggle">
+                        <a href="#">
+                            <i class="fas fa-leaf"></i>
+                        </a>
+                    </button>
                 </div>
                 <div class="checkbox">
-                    <!-- BABYSIT -->
-                    <input type="checkbox" name="cb6" id="cb6" class="toggle d_none">
-                    <label for="cb6" class="toggle-label">
-                        <i class="fas fa-baby"></i>
-                    </label>
+                    <button class="toggle">
+                        <a href="#">
+                            <i class="fas fa-house-user"></i>
+                        </a>
+                    </button>
                 </div>
                 <div class="checkbox">
-                    <!-- PET CARE -->
-                    <input type="checkbox" name="cb7" id="cb7" class="toggle d_none">
-                    <label for="cb7" class="toggle-label">
-                        <i class="fas fa-paw"></i>
-                    </label>
+                    <button class="toggle">
+                        <a href="#">
+                            <i class="fas fa-baby"></i>
+                        </a>
+                    </button>
+                </div>
+                <div class="checkbox">
+                    <button class="toggle">
+                        <a href="#">
+                            <i class="fas fa-pen"></i>
+                        </a>
+                    </button>
                 </div>
             </div>
         </div>
