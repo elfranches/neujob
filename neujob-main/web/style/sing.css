@@ -123,3 +123,79 @@ header nav {
     font-weight: bold;
     color: var(--secondary-color);
 }
+
+/* ========== BODY ========== */
+
+.main {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-top: 1em;
+}
+
+.main h1::before,
+.main h1::after {
+    content: '';
+    height: 20px;
+    width: 2.5em;
+    border-radius: 100px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 3.5em;
+}
+
+.main h1::before {
+    left: 24.5%;
+}
+
+.main h1::after {
+    right: 24.5%;
+}
+
+/* ========== FORM ========== */
+
+form {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    width: 30%;
+    /* gap: 2.5em; */
+}
+
+form input {
+    height: 2em;
+    border-radius: 12.5px;
+    border: none;
+    background-color: #E5E5E5;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.extras {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.extras input::after {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    align-items: center;
+    content: 'Remember Me?';
+    position: relative;
+    font-size: 1rem;
+    font-weight: 300;
+    left: 1.5em;
+}

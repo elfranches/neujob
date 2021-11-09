@@ -43,7 +43,27 @@
     </header>
 
     <!-- BODY -->
-    
+    <div class="main">
+        <h1>log in</h1>
+        <form action="get" class="login" method="GET">
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <div class="extras">
+                <input type="checkbox" name="contact" id="contact">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit"><a href="#">Continue</a></button>
+        </form>
+        <div class="advice">
+            <p>With your registration you accepted our ABGs</p>
+            <p>Don't have an Account?</p><span><a href="signup.html">Join us now</a></span>
+        </div>
+    </div>
+    <button class="back">
+        <a href="index.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+    </button>
 
 </body>
 </html>
