@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Neu Job</title>
+        <link rel="stylesheet" type="text/css" href="style/signups.css" media="screen" />
+        <script src="https://kit.fontawesome.com/ccf1b890cc.js" crossorigin="anonymous"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    
+    <body>
+        <!-- ========== NAV BAR ========== -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Job</h1><span>24</span><h1>You</h1>
+                </div>
+                <div class="nav__options">
+                    <ul class="nav">
+                        <div class="languages">
+                            <label class="option">
+                                <input type="radio" name="options" id="german">
+                                <img src="imgs/german_flag.png" alt="">
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="options" id="italian">
+                                <img src="imgs/italian_flag.png" alt="">
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="options" id="english" checked>
+                                <img src="imgs/uea_flag.png" alt="">
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="options" id="french">
+                                <img src="imgs/france_flag.png" alt="">
+                            </label>
+                        </div>
+                        <li><a href="login.html">Log In</a></li>
+                        <li><a href="signup.html">Home</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ========== BODY ========== -->
+
+        <div class="main">
+            <div class="title">
+                <h1>Herzliche Willkommen</h1>
+                <h3>Bitte geben Sie Ihre Daten in, um sich zu registrieren</h3>
+            </div>
+    
+            <div class="container">
+                <div class="input_area">
+                    <form action="get" class="inputs" method="GET">
+                        <h2>* Anrede</h2>
+                        <div class="genders">
+                            <label class="gender">
+                                <input type="radio" name="gender" id="frau" required>
+                                <label for="frau">Frau</label>
+                            </label>
+                            <label class="gender">
+                                <input type="radio" name="gender" id="herr" required>
+                                <label for="herr">Herr</label>    
+                            </label>
+                        </div>
+                        <input type="text" class="input" name="name" id="name" placeholder="* Namen" required>
+                        <input type="text" class="input" name="lastname" id="lastname" placeholder="* Nachnamen" required>
+                        <input type="number" class="input" name="phone" id="phone" placeholder="Telefonnummer" required>
+                        <input type="text" class="input" name="street" id="street" placeholder="* Street" required>
+                    </form>
+                </div>
+    
+                <div class="separator">
+                    <h3>Persönliche Informationen</h3>
+                </div>
+    
+                <div class="input_area complex">
+                    <form action="get" class="inputs" method="GET">
+                        <input type="file" name="photo" id="photo" class="d_none">
+                        <label for="photo" class="photo">Foto</label>
+                        <input type="number" class="input" name="street_number" id="street_number" placeholder="* Strasse Nummer" required>
+                        <input type="text" class="input" name="postal" id="postal" placeholder="* Postleitzahl" required>
+                        <input type="text" class="input" name="kanton" id="kanton" placeholder="* Kanton" required>
+                    </form>
+                </div>    
+            </div>
+        </div>
+        
+        <button class="back" onclick="location.href='signup.html'">
+            <a href="signup.html">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        </button>    
+
+        <p>Alle Felder mit "*" sind Pflichtfelder</p>
+
+        <button class="continue" type="submit" onclick="location.href='#'"><a href="#">Akzeptieren</a></button>    
+
+    </body>
+</html>

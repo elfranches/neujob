@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --font-color: #4C4C4C;
+    --primary-color: #FFDE59;
+    --secondary-color: #74C9D6;
+    --bg-color: #FFFFFF;
+}
+
+* {
+    font-family: Roboto, 'sans-serif';
+    color: var(--font-color);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========== NAV BAR ========== */
+
+header {
+    position: sticky;
+    background-color: var(--primary-color);
+    height: 10em;
+    top: 0;
+    z-index: 50;
+}
+
+header nav {
+    position: sticky;
+    background-color: var(--primary-color);
+    border-bottom: 1em solid var(--bg-color);
+    display: flex;
+    height: 9em;
+    padding: 0 4em 0 0;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav__options {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    width: 60%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.nav li a {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--bg-color);
+    transition: all 250ms ease-in-out;
+}
+
+.nav li a:hover {
+    color: var(--font-color);
+}
+
+.languages {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-right: 2em;
+    justify-content: space-between;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.option img {
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.option input {
+    margin-right: 0.75em;
+}
+
+/* ========== LOGO ========== */
+
+.logo {
+    background-color: var(--bg-color);
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 65px solid transparent;
+    border-bottom: 65px solid transparent;
+    border-left: 6em solid var(--primary-color);
+    left: 0;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.logo span {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* ========== BTNS ========== */
+
+
+/* ========== BODY ========== */
+
+.d_none {
+    display: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+    height: 80vh;
+    width: 70vw;
+    align-self: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.title h1 {
+    font-size: 4rem;
+    margin-bottom: 0.25em;
+}
+
+.title h1::before,
+.title h1::after {
+    content: '';
+    height: 20px;
+    width: 2.5em;
+    border-radius: 100px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0.5em;
+}
+
+.title h1::before {
+    right: 110%; 
+}
+
+.title h1::after {
+    left: 110%;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    height: 80%;
+    bottom: 0;
+}
+
+.input_area {
+    width: 30em;
+    height: 90%;
+}
+
+.input_area form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.input {
+    height: 2em;
+    border-radius: 12.5px;
+    border: none;
+    background-color: #E5E5E5;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+.genders {
+    width: 40%;
+    height: 2em;
+    display: flex;
+    font-weight: bold;
+    font-size: 1.25rem;
+    justify-content: space-between;
+}
+
+.separator {
+    text-align: center;
+    position: relative;
+}
+
+.separator h3::after {
+    content: '';
+    position: absolute;
+    width: 1em;
+    height: 950%;
+    border-radius: 50px;
+    background-color: var(--secondary-color);
+    left: 45%;
+    top: 4rem;
+}
+
+.complex {
+    padding-top: 10em;
+    position: relative;
+}
+
+.photo {
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    background-color: var(--bg-color);
+    border: 5px solid var(--secondary-color);
+    top: -6.75em;
+    right: 0;
+    text-align: center;
+    padding-top: 8%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
